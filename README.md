@@ -1,2 +1,3 @@
 # PaperScraper
-Final project for the lecture digital humanities
+
+Final project for seminar in digital humanities. Please visit [lgru.github.io/PaperScraper/](https://lgru.github.io/PaperScraper/).
