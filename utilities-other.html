@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Cards</title>
+    <title>SB Admin 2 - Other Utilities</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,9 +33,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-newspaper"></i>
+                    <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Paper<sup>Scraper</sup></div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="dash.html">
+                <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -58,8 +58,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                   aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Components</span>
                 </a>
@@ -73,20 +73,20 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Utilities</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
                         <a class="collapse-item" href="utilities-color.html">Colors</a>
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
                         <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <a class="collapse-item active" href="utilities-other.html">Other</a>
                     </div>
                 </div>
             </li>
@@ -166,8 +166,7 @@
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <!-- <button class="btn btn-primary" type="button">-->
-                                <button class="btn btn-primary" type="button" onclick="window.location.href='search.html';">
+                                <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -304,14 +303,14 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile.svg"
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
                                             alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
                                         <div class="text-truncate">Am I a good boy? The reason I ask is because someone
                                             told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Douglas McGee · 2w</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
@@ -324,9 +323,9 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Leon Grund</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/its_me_mario2.jpg">
+                                    src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -360,145 +359,94 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Welcome!</h1>
-                    </div>
+                    <h1 class="h3 mb-1 text-gray-800">Other Utilities</h1>
+                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
+                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
+                        below were created to extend this theme past the default utility classes built into Bootstrap's
+                        framework.</p>
 
+                    <!-- Content Row -->
                     <div class="row">
 
-                        <!-- Papers Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                        <div class="col-lg-6">
+
+                            <!-- Overflow Hidden -->
+                            <div class="card mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Overflow Hidden Utilty</h6>
+                                </div>
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h5 mb-0 font-weight-bold text-primary text-uppercase mb-1">
-                                                206 Million</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">Papers</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-paper-plane fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
+                                    Use <code>.o-hidden</code> to set the overflow property of any element to hidden.
                                 </div>
                             </div>
+
+                            <!-- Progress Small -->
+                            <div class="card mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Progress Small Utility</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-1 small">Normal Progress Bar</div>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="mb-1 small">Small Progress Bar</div>
+                                    <div class="progress progress-sm mb-2">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    Use the <code>.progress-sm</code> class along with <code>.progress</code>
+                                </div>
+                            </div>
+
+                            <!-- Dropdown No Arrow -->
+                            <div class="card mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Dropdown - No Arrow</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="dropdown no-arrow mb-4">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Dropdown (no arrow)
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    Add the <code>.no-arrow</code> class alongside the <code>.dropdown</code>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <!-- Citations Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h5 mb-0 font-weight-bold text-success text-uppercase mb-1">
-                                                2.49 Billion</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">Citations</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-hand-point-left fa-2x text-gray-300"></i>
-                                        </div>
+                        <div class="col-lg-6">
+
+                            <!-- Roitation Utilities -->
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Rotation Utilities</h6>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="bg-primary text-white p-3 rotate-15 d-inline-block my-4">.rotate-15
+                                    </div>
+                                    <hr>
+                                    <div class="bg-primary text-white p-3 rotate-n-15 d-inline-block my-4">.rotate-n-15
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
-                        <!-- Authors Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h5 mb-0 font-weight-bold text-warning text-uppercase mb-1">
-                                                79 Million</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">Authors</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-users fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- API Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h5 mb-0 font-weight-bold text-danger text-uppercase mb-1">
-                                                1,000</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">API Requests per minute</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-network-wired fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
-                <!-- Content Row -->
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-secondary">You can use <code>PaperScraper</code> to:</h6>
-                            </div>
-                            <div class="card-body text-xs">
-                                <b>Get a visual overview of a new academic field</b>
-                                Enter a typical paper and we'll build you a graph of similar papers in the field.
-                                Explore and build more graphs for interesting papers that you find - soon you'll have a
-                                real, visual understanding of the trends, popular works and dynamics of the field you're
-                                interested in.
-                                <hr class="hr" />
-                                <b>Make sure you haven't missed an important paper</b>
-                                In some fields like Machine Learning, so many new papers are published it's hard to keep
-                                track. With Connected Papers you can just search and visually discover important recent
-                                papers. No need to keep lists.
-                                <hr class="hr" />
-                                <b>Create the bibliography for your thesis</b>
-                                Start with the references that you will definitely want in your bibliography and use
-                                Connected Papers to fill in the gaps and find the rest!
-                                <hr class="hr" />
-                                <b>Discover the most relevant prior and derivative works</b>
-                                Use our Prior Works view to find important ancestor works in your field of interest. Use
-                                our Derivative Works view to find literature reviews of the field, as well as recently
-                                published State of the Art that followed your input paper.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4">
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-secondary">About</h6>
-                            </div>
-                            <div class="card-body text-xs">
-                                <b>Todos:</b>
-                                <ul>
-                                    <li>Write text landing page, e.g. use-cases and about</li>
-                                    <li>Add chart for field summary</li>
-                                    <li>Add section for recommendations</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-secondary">Future Developements</h6>
-                            </div>
-                            <div class="card-body text-xs">
-                                <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                                    CSS bloat and poor page performance. Custom CSS classes are used to create
-                                    custom components and custom utility classes.</p>
-                                <p class="mb-0">Before working with this theme, you should become familiar with the
-                                    Bootstrap framework, especially the utility classes.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <!-- /.container-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -506,7 +454,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Powered by <a href="https://www.semanticscholar.org/product/api" target="_blank" rel="noopener noreferrer"><img src="img/semantic_scholar_logo.svg" height="25"></a></span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>

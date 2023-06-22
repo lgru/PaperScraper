@@ -1,0 +1,64 @@
+{
+  "__DES__": "produces list of paper search results by query text",
+  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/search?query=High+Frequency+Trade+and+Quote+Option+Data&fields=paperId,title,authors,year,abstract&offset=0&limit=10",
+  "total": 501,
+  "offset": 1,
+  "next": 10,
+  "data": [
+    {
+      "paperId": "036c62f30ac23ce5893c7e875e1007f29e075730",
+      "title": "A Descriptive Study of High-Frequency Trade and Quote Option Data",
+      "authors": [{"authorId": "2315163", "name": "T. Andersen"}, {"authorId": "91480231", "name": "Ilya Archakov"}, {"authorId": "2087600768", "name": "Leon Eric Grund"}, {"authorId": "2714763", "name": "N. Hautsch"}, {"authorId": "47001533", "name": "Yifan Li"}, {"authorId": "101262457", "name": "S. Nasekin"}, {"authorId": "50979061", "name": "Ingmar Nolte"}, {"authorId": "2145471356", "name": "Manh Cuong Pham"}, {"authorId": "123557452", "name": "Stephen J. Taylor"}, {"authorId": "2371436", "name": "Viktor Todorov"}],
+      "abstract": "This paper provides a guide to high frequency option trade and quote data disseminated by the \nOptions Price Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and present a thorough empirical description of the observed option trades and quotes for a selected sample of underlying assets that contains more than 25 billion records. We outline several types of irregular observations and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density estimation. Both applications highlight the rich information content of the high frequency OPRA data.",
+      "year": 2020
+    }, {
+      "paperId": "1b1c057d41f80c5ed503e0769e1de0cec4780284",
+      "title": "Identifying High Frequency Trading activity without proprietary data",
+      "authors": [{"authorId": "40555480", "name": "Bidisha Chakrabarty"}, {"authorId": "114641741", "name": "R. Pascual"}]
+      "abstract": "Public trade and quote databases do not typically include high frequency trader (HFT) identifiers, so researchers develop proxies. We assess the reliability of the commonly used proxies by benchmarking them against measures using proprietary data with HFT identifiers. All proxies are highly correlated among themselves and can identify HFT activities in general and their liquiditydemanding and supplying functions. Even during unusually high and/or low HFT liquiditydemand or supply episodes the proxies perform well. The reliability of the proxies does not depend on the time windows used to aggregate data. Hasbrouck and Saar\u2019s 2013, Strategic Runs proxy best isolates HFT-specific activities. These results can help researchers identify HFT activity in the absence of proprietary data. JEL classification: G10",
+      "year": 2022
+    }, {
+      "paperId": "5426f12c35fed0b0250319235b50c70d1260026d",
+      "title": "In Good Times and in Bad: High-Frequency Market Making Design, Liquidity, and Asset Prices",
+      "authors": [{"authorId": "123071362", "name": "Simon N. M. Schmickler"}, {"authorId": "2104674492", "name": "Pedro Tremacoldi-Rossi"}],
+      "abstract": "How can exchanges and regulators improve the liquidity and stability of modern financial markets through liquidity provision obligations and incentives? We exploit two market maker programs as natural experiments using unique message-level trade and quote data from the Brazilian stock exchange that reveal market participants\u2019 identities. We find combining obligations and incentives improves and stabilizes liquidity which attracts volume and lifts asset prices. In normal times, these positive effects are driven by the program incentives, while tight obligations constrain market makers and decrease market quality. In crises, however, the results flip: stocks with larger incentives experience worse liquidity dry-ups because voluntary liquidity providers withdraw; in contrast, tight obligations mitigate liquidity dry-ups because mandatory intermediaries step in as the liquidity providers of last resort. Finally, which market makers are assigned to which stocks is consequential: market makers\u2019 crossasset hedging behavior causes excess co-movement of returns, liquidity, and volume, highlighting a trade-off between liquidity and excess co-movement. Overall, our results suggest that exchanges and regulators should combine incentives with countercyclical liquidity provision obligations.",
+      "year": 2022
+    }, {
+      "paperId": "ba025d7e114ff41fc9ccec7717a5180a3f1c593f",
+      "title": "A time-varying jump tail risk measure using high-frequency options data",
+      "authors": [{"authorId": "47929619", "name": "M. Ubukata"}],
+      "abstract": null,
+      "year": 2022
+    }, {
+      "paperId": "b4390839e83c6a53a8fca97315bb3fed8bd92382",
+      "title": "High Frequency Price Duration Prediction of Option Based on XGBoost and GA-BP",
+      "authors": [{"authorId": "2110674570", "name": "Xinzhu Liu"}],
+      "abstract": "In financial high-frequency data, duration data can reflect the transaction intensity and liquidity of financial market, so the prediction of duration is a research hotspot in the financial field in recent years. With the development of machine learning, it is more and more common to apply machine learning method to the research of financial field. This paper screens evaluation indicators via XGBoost and then optimizes the BP neural network with genetic algorithm. Meanwhile, it introduces the duration average high-low spread, duration average absolute return, duration average trading volume, position at time point and trading density as the microstructure variables to build the prediction model of the price duration of Shanghai 50ETF options. It is found that the introduction of genetic algorithm can improve the prediction accuracy and efficiency of BP neural network, and the evaluation indexes MSE, RMSE, and MAE are reduced by 74.14%, 49.41% and 38.82% respectively, with the operation time reduced by 33.25%. This method provides a new research idea for the prediction of high-frequency price duration, and enriches the theoretical research of machine learning method in the field of option highfrequency data prediction.",
+      "year": 2021
+    }, {
+      "paperId": "95723e0b544875e07a900735c3f383c5cd857c7f",
+      "title": "Volatility Forecasting for High-Frequency Financial Data Based on Web Search Index and Deep Learning Model",
+      "authors": [{"authorId": "2089809969", "name": "Bolin Lei"}, {"authorId": "1390499062", "name": "Boyu Zhang"}, {"authorId": "2507156", "name": "Yuping Song"}],
+      "abstract": "The existing index system for volatility forecasting only focuses on asset return series or historical volatility, and the prediction model cannot effectively describe the highly complex and nonlinear characteristics of the stock market. In this study, we construct an investor attention factor through a Baidu search index of antecedent keywords, and then combine other trading information such as the trading volume, trend indicator, quote change rate, etc., as input indicators, and finally employ the deep learning model via temporal convolutional networks (TCN) to forecast the volatility under high-frequency financial data. We found that the prediction accuracy of the TCN model with investor attention is better than those of the TCN model without investor attention, the traditional econometric model as the generalized autoregressive conditional heteroscedasticity (GARCH), the heterogeneous autoregressive model of realized volatility (HAR-RV), autoregressive fractionally integrated moving average (ARFIMA) models, and the long short-term memory (LSTM) model with investor attention. Compared with the traditional econometric models, the multi-step prediction results for the TCN model remain robust. Our findings provide a more accurate and robust method for volatility forecasting for big data and enrich the index system of volatility forecasting.",
+      "year": 2021
+    }, {
+      "paperId": "26408134982d8a64104255df380e0254e997a33f",
+      "title": "High-Frequency Technical Analysis and Systemic Risk Indicators",
+      "authors": [{"authorId": "47146577", "name": "Ryuichi Yamamoto"}],
+      "abstract": "This study conducts a high-frequency technical analysis of individual stocks listed on the Tokyo Stock Exchange. We propose novel technical rules that derive the timing of trades according to traditional systemic risks\u2014such as shock-propagation, quote-stuffing, and tail risks\u2014measured by auto- and cross-correlations in order flows, quote-to-trade ratios, and CoVaRs. We demonstrate that both price-based technical strategies\u2014commonly used in technical analysis such as moving average rules\u2014and the newly proposed rules can exploit the significantly superior performance to the buy-and-hold rule when we trade volatile momentum or trend-reversal stocks of small-sized firms. Accordingly, this study improves stock price forecasts in high-frequency trading. Our results suggest that historic prices and systemic risk indicators assist in the risk management and portfolio choices of stock investors. To the best of our knowledge, this is the first study to demonstrate the superior trading performance of individual stocks using a high-frequency technical analysis\u2014even after considering data-snooping bias and transaction costs.",
+      "year": 2021
+    }, {
+      "paperId": "111aea944fd960f7d7dc0086868db6497a3d73a3",
+      "title": "High-Frequency Trading (HFT) in the Stock Market and the Costs of Option Market Making",
+      "authors": [{"authorId": "103341060", "name": "M. Nimalendran"}, {"authorId": "114340037", "name": "Khaladdin Rzayev"}, {"authorId": "68995260", "name": "Satchit Sagade"}],
+      "abstract": "Based on granular NASDAQ HFT data, we find that HFT activity in the stock market increases market-making costs in the options markets via two channels: the hedging channel and the arbitrage channel. HFTs' liquidity-demanding orders increase the hedging costs due to a higher stock bid-ask spread and a higher price impact for larger hedging demand. The arbitrage channel subjects the option market maker to the risk of trading at stale prices. We show that the hedging (arbitrage) channel is dominant for ATM (ITM) options. Our results highlight the necessity to better understand the costs/risks due to HFT on option markets.",
+      "year": 2020
+    }, {
+      "paperId": "10a83376df99f9091d4fabdb887d063797dc8f7c",
+      "title": "Understanding Jumps in High Frequency Digital Asset Markets",
+      "authors": [{"authorId": "2035503492", "name": "Danial Saef"}, {"authorId": "2133303920", "name": "Odett Nagy"}, {"authorId": "144589889", "name": "Sergej Sizov"}, {"authorId": "2015030", "name": "W. H\u00e4rdle"}],
+      "abstract": "While attention is a predictor for digital asset prices, and jumps in Bitcoin prices are well-known, we know little about its alternatives. Studying high frequency crypto data gives us the unique possibility to confirm that cross market digital asset returns are driven by high frequency jumps clustered around black swan events, resembling volatility and trading volume seasonalities. Regressions show that intra-day jumps significantly influence end of day returns in size and direction. This provides fundamental research for crypto option pricing models. However, we need better econometric methods for capturing the specific market microstructure of cryptos. All calculations are reproducible via the quantlet.com technology.",
+      "year": 2021
+    }
+  ]
+}

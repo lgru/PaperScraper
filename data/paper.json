@@ -1,0 +1,4 @@
+{
+  "__DES__": "full paper details including title, authors, abstract, references and citations",
+  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/036c62f30ac23ce5893c7e875e1007f29e075730?fields=title,authors,year,abstract,tldr,referenceCount,citationCount,influentialCitationCount"
+}

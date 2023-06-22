@@ -1,0 +1,16 @@
+{
+  "__DES__": "produces paper recommendations for given paper_id",
+  "__URL__": "https://api.semanticscholar.org/recommendations/v1/papers/forpaper/036c62f30ac23ce5893c7e875e1007f29e075730?fields=paperId,title,year,abstract&limit=10",
+  "recommendedPapers": [
+    {"paperId": "b9179569ece9d9e92f13d6dc5355ecdc5f60243e", "title": "A Comparison of Alternative Option Pricing Models", "year": 2023, "abstract": "This paper provides a guide to high frequency option trade and quote data disseminated by the \nOptions Price Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and present a thorough empirical description of the observed option trades and quotes for a selected sample of underlying assets that contains more than 25 billion records. We outline several types of irregular observations and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density estimation. Both applications highlight the rich information content of the high frequency OPRA data."},
+    {"paperId": "f8118bb9081bbcdaf987120302f7469cc91f4b3b", "title": "Optimal Inference for Spot Regressions", "year": 2023},
+    {"paperId": "6dd01cbd74e0d02f01ceb81dc4f7a36caa3c1c09", "title": "Large Global Volatility Matrix Analysis Based on Structural Information", "year": 2023},
+    {"paperId": "ee27aaed296baea822005123dce5c7022fc2e995", "title": "When Is Cross Impact Relevant?", "year": 2023},
+    {"paperId": "26e534fa38dc8fd5d658a9fda1e419f252313098", "title": "Optimizing Stock Portfolio using Markowitz Model", "year": 2023},
+    {"paperId": "6c5f7639eb3b3d786dcfcc76c2e0af3b94da641e", "title": "An Option Valuation Formula for Stochastic Volatility Driven by GARCH Processes", "year": 2023},
+    {"paperId": "d03b951b70ec76a1e9ffcd4ab2d089afdb3db6a9", "title": "High-frequency Trading and Stock Markets: Past, Present and the Road Ahead", "year": 2023},
+    {"paperId": "947ad90990c5a4bbaaf0699d47ab590abcc57d2c", "title": "Implied higher order moments in the Heston model: a case study of S &P500 index", "year": 2023},
+    {"paperId": "40115172e867059eaf614bcae7cec8d3dc7f27f0", "title": "Aggregate Investor Sentiment and Time-Varying Price Discovery: Evidence from the Options Market", "year": 2023},
+    {"paperId": "f8d83d1909463a9b71a7a54013832c68dc9832c5", "title": "An overview of technical analysis in systematic trading strategies returns and a novel systematic strategy yielding positive significant returns", "year": 2023}
+  ]
+}
