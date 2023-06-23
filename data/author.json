@@ -1,4 +1,12 @@
 {
   "__DES__": "author information including list of publications",
-  "__URL__": "tbd"
+  "__URL__": "https://api.semanticscholar.org/graph/v1/author/2087600768?fields=name,affiliations,paperCount,citationCount,papers",
+  "authorId": "2087600768",
+  "name": "Leon Eric Grund",
+  "affiliations": [],
+  "paperCount": 2,
+  "citationCount": 3,
+  "papers": [
+    {"paperId": "58acca417b25fdfa24b8b6d13e3ce66cd3a1d621", "title": "A Descriptive Study of High-Frequency Trade and Quote Option Data*"},
+    {"paperId": "036c62f30ac23ce5893c7e875e1007f29e075730", "title": "A Descriptive Study of High-Frequency Trade and Quote Option Data"}]
 }

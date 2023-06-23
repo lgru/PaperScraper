@@ -1,0 +1,24 @@
+{
+  "__DES__": "list all citations for given paper id",
+  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/036c62f30ac23ce5893c7e875e1007f29e075730/citations?fields=title,year,citationCount,referenceCount,influentialCitationCount,fieldsOfStudy",
+  "offset": 0,
+  "data": [{
+    "citingPaper": {
+      "paperId": "63026b6a8ce17fed61f1ee46aac53bd6f2faee59",
+      "title": "Mixture-of-Lognormal Risk-Neutral Density Estimation Revisited: Asymptotics, Analytical Derivatives, and the Mode Constraint",
+      "year": 2021,
+      "referenceCount": 75,
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "fieldsOfStudy": null}
+  }, {
+    "citingPaper": {
+      "paperId": "948fee3b9c52322d3d0aa7302a013fa3990d0683",
+      "title": "Stock Illiquidity and Option Returns",
+      "year": 2016,
+      "referenceCount": 72,
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "fieldsOfStudy": ["Business"]}
+  }]
+}

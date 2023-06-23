@@ -1,4 +1,13 @@
 {
   "__DES__": "full paper details including title, authors, abstract, references and citations",
-  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/036c62f30ac23ce5893c7e875e1007f29e075730?fields=title,authors,year,abstract,tldr,referenceCount,citationCount,influentialCitationCount"
+  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/036c62f30ac23ce5893c7e875e1007f29e075730?fields=title,authors,year,abstract,tldr,referenceCount,citationCount,influentialCitationCount",
+  "paperId": "036c62f30ac23ce5893c7e875e1007f29e075730",
+  "title": "A Descriptive Study of High-Frequency Trade and Quote Option Data",
+  "abstract": "This paper provides a guide to high frequency option trade and quote data disseminated by the \nOptions Price Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and present a thorough empirical description of the observed option trades and quotes for a selected sample of underlying assets that contains more than 25 billion records. We outline several types of irregular observations and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density estimation. Both applications highlight the rich information content of the high frequency OPRA data.",
+  "year": 2020,
+  "referenceCount": 79,
+  "citationCount": 2,
+  "influentialCitationCount": 0,
+  "tldr": {"model": "tldr@v2.0.0", "text": "A comprehensive overview of the U.S. option market, including details on market regulation and the trading processes for all 16 constituent option exchanges is presented, and the usefulness of the high frequency option data is illustrated with two empirical applications: option-implied variance estimation and risk-neutral density estimation."},
+  "authors": [{"authorId": "2315163", "name": "T. Andersen"}, {"authorId": "91480231", "name": "Ilya Archakov"}, {"authorId": "2087600768", "name": "Leon Eric Grund"}, {"authorId": "2714763", "name": "N. Hautsch"}, {"authorId": "47001533", "name": "Yifan Li"}, {"authorId": "101262457", "name": "S. Nasekin"}, {"authorId": "50979061", "name": "Ingmar Nolte"}, {"authorId": "2145471356", "name": "Manh Cuong Pham"}, {"authorId": "123557452", "name": "Stephen J. Taylor"}, {"authorId": "2371436", "name": "Viktor Todorov"}]
 }
