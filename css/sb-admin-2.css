@@ -9993,6 +9993,10 @@ a:focus {
   font-size: .7rem;
 }
 
+.text-xxs {
+  font-size: .4rem;
+}
+
 .text-lg {
   font-size: 1.2rem;
 }

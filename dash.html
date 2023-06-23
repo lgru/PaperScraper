@@ -20,6 +20,9 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -595,9 +598,10 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
+                                    <div class="chart-pie pt-4">
                                         <canvas id="myPieChart"></canvas>
                                     </div>
+                                    <a style="font-size: 29px">&nbsp;</a>
                                 </div>
                             </div>
                         </div>
@@ -650,85 +654,712 @@
 <!--                        </div>-->
 
                         <!-- Citations -->
-                        <div class="col-xl-4 col-lg-7">
+                        <div class="col-xl-6 col-lg-7">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Citations</h6>
                                 </div>
-                                <div class="card-body text-xs">
-                                    <h10 class="m-0 font-weight-bold text-primary">A Descriptive Study of High-Frequency Trade and Quote Option Data</h10>
-                                    <hr class="hr" />
-                                    <b>Abstract:</b> This paper provides a guide to high frequency option trade and quote data disseminated by the Options Price
-                                    Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details
-                                    on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing
-                                    literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and
-                                    present a thorough empirical description of the observed option trades and quotes for a selected sample of
-                                    underlying assets that contains more than 25 billion records. We outline several types of irregular observations
-                                    and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
-                                    frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
-                                    estimation. Both applications highlight the rich information content of the high frequency OPRA data.
-                                    <p align="right">
-                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
-                                            <i class="fas fa-chart-pie"></i>
-                                        </a>
-                                    </p>
+                                <div class="card-body text-xxs">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Year</th>
+                                                    <th>Citations</th>
+                                                    <th>References</th>
+                                                    <th>Fields</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Mixture-of-Lognormal Risk-Neutral Density Estimation Revisited: Asymptotics, Analytical Derivatives, and the Mode Constraint</td>
+                                                    <td>2021</td>
+                                                    <td>0</td>
+                                                    <td>75</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stock Illiquidity and Option Returns</td>
+                                                    <td>2016</td>
+                                                    <td>3</td>
+                                                    <td>72</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recommendations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Recommendations</h6>
+                                </div>
+                                <div class="card-body text-xxs">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable3" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Year</th>
+                                                    <th>Citations</th>
+                                                    <th>References</th>
+                                                    <th>Fields</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>A Comparison of Alternative Option Pricing Models</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>22</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Optimal Inference for Spot Regressions</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>59</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Large Global Volatility Matrix Analysis Based on Structural Information</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>38</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>When Is Cross Impact Relevant?</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>32</td>
+                                                    <td>Economics,Physics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Optimizing Stock Portfolio using Markowitz Model</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>4</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>An Option Valuation Formula for Stochastic Volatility Driven by GARCH Processes</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>21</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>High-frequency Trading and Stock Markets: Past, Present and the Road Ahead</td>
+                                                    <td>2023</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Implied higher order moments in the Heston model: a case study of S &P500 index</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>26</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Aggregate Investor Sentiment and Time-Varying Price Discovery: Evidence from the Options Market</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>11</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>An overview of technical analysis in systematic trading strategies returns and a novel systematic strategy yielding positive significant returns</td>
+                                                    <td>2023</td>
+                                                    <td>0</td>
+                                                    <td>39</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- References -->
-                        <div class="col-xl-4 col-lg-7">
+                        <div class="col-xl-6 col-lg-7">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">References</h6>
                                 </div>
-                                <div class="card-body text-xs">
-                                    <h10 class="m-0 font-weight-bold text-primary">A Descriptive Study of High-Frequency Trade and Quote Option Data</h10>
-                                    <hr class="hr" />
-                                    <b>Abstract:</b> This paper provides a guide to high frequency option trade and quote data disseminated by the Options Price
-                                    Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details
-                                    on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing
-                                    literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and
-                                    present a thorough empirical description of the observed option trades and quotes for a selected sample of
-                                    underlying assets that contains more than 25 billion records. We outline several types of irregular observations
-                                    and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
-                                    frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
-                                    estimation. Both applications highlight the rich information content of the high frequency OPRA data.
-                                    <p align="right">
-                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
-                                            <i class="fas fa-chart-pie"></i>
-                                        </a>
-                                    </p>
+                                <div class="card-body text-xxs">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable2" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Year</th>
+                                                    <th>Citations</th>
+                                                    <th>References</th>
+                                                    <th>Fields</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Options Trading Costs Are Lower than You Think</td>
+                                                    <td>2020</td>
+                                                    <td>36</td>
+                                                    <td>54</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nonparametric spot volatility from options</td>
+                                                    <td>2019</td>
+                                                    <td>25</td>
+                                                    <td>42</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumps in Option Prices and Their Determinants: Real-Time Evidence from the E-Mini S&P 500 Option Market</td>
+                                                    <td>2019</td>
+                                                    <td>11</td>
+                                                    <td>73</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nonparametric Filtering of Conditional State-Price Densities</td>
+                                                    <td>2019</td>
+                                                    <td>10</td>
+                                                    <td>73</td>
+                                                    <td>Mathematics,Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Information about price and volatility jumps inferred from options prices</td>
+                                                    <td>2018</td>
+                                                    <td>4</td>
+                                                    <td>62</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Illiquidity Premia in the Equity Options Market</td>
+                                                    <td>2017</td>
+                                                    <td>124</td>
+                                                    <td>132</td>
+                                                    <td>Economics,Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Short-Term Market Risks Implied by Weekly Options</td>
+                                                    <td>2017</td>
+                                                    <td>89</td>
+                                                    <td>55</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Option Investor Rationality Revisited: The Role of Exercise Boundary Violations</td>
+                                                    <td>2017</td>
+                                                    <td>6</td>
+                                                    <td>34</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Extracting Latent States from High-Frequency Option Prices</td>
+                                                    <td>2017</td>
+                                                    <td>3</td>
+                                                    <td>60</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Make-Take Structure and Market Quality: Evidence from the U.S. Options Markets</td>
+                                                    <td>2016</td>
+                                                    <td>15</td>
+                                                    <td>49</td>
+                                                    <td>Economics,Computer Science</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Are classical option pricing models consistent with observed option second-order moments? Evidence from high-frequency data.</td>
+                                                    <td>2015</td>
+                                                    <td>8</td>
+                                                    <td>93</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Short-term options: Clienteles, market segmentation, and event trading</td>
+                                                    <td>2015</td>
+                                                    <td>10</td>
+                                                    <td>58</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nonparametric Estimation of the Leverage Effect: A Trade-Off Between Robustness and Efficiency</td>
+                                                    <td>2015</td>
+                                                    <td>54</td>
+                                                    <td>91</td>
+                                                    <td>Economics,Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trading Fast and Slow: Colocation and Liquidity</td>
+                                                    <td>2015</td>
+                                                    <td>182</td>
+                                                    <td>41</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exploring Return Dynamics via Corridor Implied Volatility</td>
+                                                    <td>2015</td>
+                                                    <td>104</td>
+                                                    <td>40</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Pre-FOMC Announcement Drift: The Pre-FOMC Announcement Drift</td>
+                                                    <td>2015</td>
+                                                    <td>180</td>
+                                                    <td>31</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Order Flow and Expected Option Returns</td>
+                                                    <td>2015</td>
+                                                    <td>115</td>
+                                                    <td>59</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On implied volatility for options—Some reasons to smile and more to correct</td>
+                                                    <td>2014</td>
+                                                    <td>19</td>
+                                                    <td>27</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Intraday Trading and Bid–Ask Spread Characteristics for SPX and SPY Options</td>
+                                                    <td>2014</td>
+                                                    <td>5</td>
+                                                    <td>34</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Aggregating Information in Option Transactions</td>
+                                                    <td>2014</td>
+                                                    <td>14</td>
+                                                    <td>38</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A Tale of Two Option Markets: Pricing Kernels and Volatility Risk</td>
+                                                    <td>2014</td>
+                                                    <td>111</td>
+                                                    <td>98</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Diversity of High-Frequency Traders</td>
+                                                    <td>2013</td>
+                                                    <td>385</td>
+                                                    <td>39</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Intraday and Overnight Behavior of SPY Options and Adjusted Delta Hedging</td>
+                                                    <td>2013</td>
+                                                    <td>4</td>
+                                                    <td>13</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>What Drives Option Prices?</td>
+                                                    <td>2012</td>
+                                                    <td>5</td>
+                                                    <td>26</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Does Option Trading Convey Stock Price Information?</td>
+                                                    <td>2011</td>
+                                                    <td>185</td>
+                                                    <td>79</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>How Much Do Investors Care About Macroeconomic Risk? Evidence from Scheduled Economic Announcements</td>
+                                                    <td>2011</td>
+                                                    <td>321</td>
+                                                    <td>98</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>To Pay or Be Paid? The Impact of Taker Fees and Order Flow Inducements on Trading Costs in U.S. Options Markets</td>
+                                                    <td>2011</td>
+                                                    <td>44</td>
+                                                    <td>39</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Regulation NMS and Market Quality</td>
+                                                    <td>2011</td>
+                                                    <td>42</td>
+                                                    <td>37</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Evaporating Liquidity</td>
+                                                    <td>2010</td>
+                                                    <td>415</td>
+                                                    <td>45</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Midquotes or Transactional Data? The Comparison of Black Model on HF Data</td>
+                                                    <td>2010</td>
+                                                    <td>7</td>
+                                                    <td>71</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Is There Price Discovery in Equity Options?</td>
+                                                    <td>2010</td>
+                                                    <td>170</td>
+                                                    <td>64</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Which Option Pricing Model is the Best? High Frequency Data for Nikkei225 Index Options</td>
+                                                    <td>2010</td>
+                                                    <td>2</td>
+                                                    <td>67</td>
+                                                    <td>Business,Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Deviations from Put-Call Parity and Stock Return Predictability</td>
+                                                    <td>2010</td>
+                                                    <td>506</td>
+                                                    <td>79</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Regulatory Uncertainty and Market Liquidity: The 2008 Short Sale Ban's Impact on Equity Option Markets</td>
+                                                    <td>2010</td>
+                                                    <td>266</td>
+                                                    <td>48</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Realized Kernels in Practice: Trades and Quotes</td>
+                                                    <td>2009</td>
+                                                    <td>571</td>
+                                                    <td>35</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Microstructure Noise in the Continuous Case: The Pre-Averaging Approach ∗</td>
+                                                    <td>2009</td>
+                                                    <td>630</td>
+                                                    <td>35</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Option-Implied Measures of Equity Risk</td>
+                                                    <td>2009</td>
+                                                    <td>171</td>
+                                                    <td>72</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Shape and Term Structure of the Index Option Smirk: Why Multifactor Stochastic Volatility Models Work so Well</td>
+                                                    <td>2009</td>
+                                                    <td>540</td>
+                                                    <td>55</td>
+                                                    <td>Computer Science,Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Option Valuation with Long-Run and Short-Run Volatility Components</td>
+                                                    <td>2008</td>
+                                                    <td>322</td>
+                                                    <td>93</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price Discovery in the U.S. Stock Options Market</td>
+                                                    <td>2007</td>
+                                                    <td>10</td>
+                                                    <td>22</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Volatility Dynamics for the S&P500: Evidence from Realized Volatility, Daily Returns and Option Prices</td>
+                                                    <td>2007</td>
+                                                    <td>255</td>
+                                                    <td>54</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stealth Trading in Options Markets</td>
+                                                    <td>2007</td>
+                                                    <td>131</td>
+                                                    <td>43</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price discovery in the U.S. stock and stock options markets: A portfolio approach</td>
+                                                    <td>2007</td>
+                                                    <td>51</td>
+                                                    <td>61</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Electronic Trading in Stock Markets</td>
+                                                    <td>2006</td>
+                                                    <td>148</td>
+                                                    <td>19</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Financial Econometric Analysis at Ultra-High Frequency: Data Handling Concerns</td>
+                                                    <td>2006</td>
+                                                    <td>302</td>
+                                                    <td>33</td>
+                                                    <td>Mathematics,Computer Science</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dynamics of State Price Densities</td>
+                                                    <td>2005</td>
+                                                    <td>39</td>
+                                                    <td>45</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trade-through prohibitions and market quality</td>
+                                                    <td>2005</td>
+                                                    <td>35</td>
+                                                    <td>27</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Closed-Form Transformations from Risk-Neutral to Real-World Distributions</td>
+                                                    <td>2004</td>
+                                                    <td>140</td>
+                                                    <td>55</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Toward a National Market System for U.S. Exchange–listed Equity Options</td>
+                                                    <td>2004</td>
+                                                    <td>109</td>
+                                                    <td>11</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Options and the Bubble</td>
+                                                    <td>2004</td>
+                                                    <td>248</td>
+                                                    <td>41</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>What Explains the Stock Market's Reaction to Federal Reserve Policy?</td>
+                                                    <td>2003</td>
+                                                    <td>1768</td>
+                                                    <td>75</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Behavior of Bid-Ask Spreads and Volume in Options Markets During the Competition for Listings in 1999</td>
+                                                    <td>2002</td>
+                                                    <td>147</td>
+                                                    <td>78</td>
+                                                    <td>Economics,Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Estimation of Risk-Neutral Densities Using Positive Convolution Approximation</td>
+                                                    <td>2002</td>
+                                                    <td>124</td>
+                                                    <td>53</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Competition, Market Structure, and Bid‐Ask Spreads in Stock Option Markets</td>
+                                                    <td>2002</td>
+                                                    <td>179</td>
+                                                    <td>9</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trade Size and Information-Motivated Trading in the Options and Stock Markets</td>
+                                                    <td>2001</td>
+                                                    <td>79</td>
+                                                    <td>34</td>
+                                                    <td>Business</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>An Introduc-tion to High-Frequency Finance</td>
+                                                    <td>2001</td>
+                                                    <td>1080</td>
+                                                    <td></td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Option Volume and Stock Prices: Evidence on Where Informed Traders Trade</td>
+                                                    <td>1998</td>
+                                                    <td>1079</td>
+                                                    <td>34</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Empirical Performance of Alternative Option Pricing Models</td>
+                                                    <td>1997</td>
+                                                    <td>2693</td>
+                                                    <td>43</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Recovering an Asset's Implied PDF from Option Prices: An Application to Crude Oil during the Gulf Crisis</td>
+                                                    <td>1997</td>
+                                                    <td>438</td>
+                                                    <td>33</td>
+                                                    <td>Economics,Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Allocation of Informed Trading Across Related Markets: An Analysis of the Impact of Changes in Equity-Option Margin Requirements</td>
+                                                    <td>1995</td>
+                                                    <td>159</td>
+                                                    <td>32</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nonparametric estimation of state-price densities implicit in financial asset prices</td>
+                                                    <td>1995</td>
+                                                    <td>732</td>
+                                                    <td>68</td>
+                                                    <td>Economics,Computer Science</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Automatic Lag Selection in Covariance Matrix Estimation</td>
+                                                    <td>1994</td>
+                                                    <td>3250</td>
+                                                    <td>18</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A Characterization of the Daily and Intraday Behavior of Returns on Options</td>
+                                                    <td>1994</td>
+                                                    <td>91</td>
+                                                    <td>20</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bid-Ask Spreads and Trading Activity in the S&P 100 Index Options Market</td>
+                                                    <td>1993</td>
+                                                    <td>182</td>
+                                                    <td>26</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CALL OPTION VALUATION FOR DISCRETE NORMAL MIXTURES</td>
+                                                    <td>1990</td>
+                                                    <td>190</td>
+                                                    <td>13</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Liquidity of the CBOE Equity Options</td>
+                                                    <td>1990</td>
+                                                    <td>229</td>
+                                                    <td>21</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Intraday Price Change and Trading Volume Relations in the Stock and Stock Option Markets</td>
+                                                    <td>1990</td>
+                                                    <td>464</td>
+                                                    <td>15</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Asymptotic Theory of Nonlinear Least Squares Estimation</td>
+                                                    <td>1981</td>
+                                                    <td>521</td>
+                                                    <td>22</td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Asymptotic Properties of Non-Linear Least Squares Estimators</td>
+                                                    <td>1969</td>
+                                                    <td>1352</td>
+                                                    <td></td>
+                                                    <td>Mathematics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Market Fragmentation Metrics</td>
+                                                    <td>2005</td>
+                                                    <td>4</td>
+                                                    <td>18</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The jump-risk premia implicit in options: evidence from an integrated time-series study $</td>
+                                                    <td>2002</td>
+                                                    <td>1186</td>
+                                                    <td>57</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Option valuation using the fast Fourier transform</td>
+                                                    <td>1999</td>
+                                                    <td>2199</td>
+                                                    <td>17</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Prices of State-Contingent Claims Implicit in Option Prices</td>
+                                                    <td>1978</td>
+                                                    <td>2317</td>
+                                                    <td>33</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The pricing of commodity contracts</td>
+                                                    <td>1976</td>
+                                                    <td>2740</td>
+                                                    <td>8</td>
+                                                    <td>Economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The fne structure of equityindex option dynamics</td>
+                                                    <td>2015</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Convert OTM puts into ITM calls using put-call parity and use call options to estimate the RNDs</td>
+                                                    <td>1998</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The effect of macroeconomic news on beliefs and preferences: Evidence from the options market</td>
+                                                    <td>2006</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Construction and interpretation of model-free implied volatility</td>
+                                                    <td>2007</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Recommendations -->
-                        <div class="col-xl-4 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Recommendations</h6>
-                                </div>
-                                <div class="card-body text-xs">
-                                    <h10 class="m-0 font-weight-bold text-primary">A Descriptive Study of High-Frequency Trade and Quote Option Data</h10>
-                                    <hr class="hr" />
-                                    <b>Abstract:</b> This paper provides a guide to high frequency option trade and quote data disseminated by the Options Price
-                                    Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details
-                                    on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing
-                                    literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and
-                                    present a thorough empirical description of the observed option trades and quotes for a selected sample of
-                                    underlying assets that contains more than 25 billion records. We outline several types of irregular observations
-                                    and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
-                                    frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
-                                    estimation. Both applications highlight the rich information content of the high frequency OPRA data.
-                                    <p align="right">
-                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
-                                            <i class="fas fa-chart-pie"></i>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
@@ -795,11 +1426,16 @@
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
 
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-bubble-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>
