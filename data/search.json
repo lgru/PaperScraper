@@ -14,7 +14,7 @@
     }, {
       "paperId": "1b1c057d41f80c5ed503e0769e1de0cec4780284",
       "title": "Identifying High Frequency Trading activity without proprietary data",
-      "authors": [{"authorId": "40555480", "name": "Bidisha Chakrabarty"}, {"authorId": "114641741", "name": "R. Pascual"}]
+      "authors": [{"authorId": "40555480", "name": "Bidisha Chakrabarty"}, {"authorId": "114641741", "name": "R. Pascual"}],
       "abstract": "Public trade and quote databases do not typically include high frequency trader (HFT) identifiers, so researchers develop proxies. We assess the reliability of the commonly used proxies by benchmarking them against measures using proprietary data with HFT identifiers. All proxies are highly correlated among themselves and can identify HFT activities in general and their liquiditydemanding and supplying functions. Even during unusually high and/or low HFT liquiditydemand or supply episodes the proxies perform well. The reliability of the proxies does not depend on the time windows used to aggregate data. Hasbrouck and Saar\u2019s 2013, Strategic Runs proxy best isolates HFT-specific activities. These results can help researchers identify HFT activity in the absence of proprietary data. JEL classification: G10",
       "year": 2022
     }, {
