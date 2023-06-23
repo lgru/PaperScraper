@@ -1,6 +1,6 @@
 {
   "__DES__": "list all references for given paper id",
-  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/036c62f30ac23ce5893c7e875e1007f29e075730/references?fields=title,year,citationCount,referenceCount,influentialCitationCount,fieldsOfStudy"
+  "__URL__": "https://api.semanticscholar.org/graph/v1/paper/036c62f30ac23ce5893c7e875e1007f29e075730/references?fields=title,year,citationCount,referenceCount,influentialCitationCount,fieldsOfStudy",
   "offset": 0,
   "data": [{
     "citedPaper": {

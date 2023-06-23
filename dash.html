@@ -448,8 +448,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Author Publications</div>
-                                            <div class="h3 mb-0 font-weight-bold text-gray-800">18</div>
+                                                Recommendations</div>
+                                            <div class="h3 mb-0 font-weight-bold text-gray-800">10</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -511,11 +511,11 @@
                                     and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
                                     frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
                                     estimation. Both applications highlight the rich information content of the high frequency OPRA data.
-                                    <p align="right">
-                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
-                                            <i class="fas fa-chart-pie"></i>
-                                        </a>
-                                    </p>
+<!--                                    <p align="right">-->
+<!--                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">-->
+<!--                                            <i class="fas fa-chart-pie"></i>-->
+<!--                                        </a>-->
+<!--                                    </p>-->
                                 </div>
                             </div>
                         </div>
@@ -525,7 +525,7 @@
                     <div class="row">
 
                         <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
+                        <div class="col-xl-4 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
@@ -550,6 +550,20 @@
                                 <div class="card-body">
                                     <div class="chart-area">
                                         <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bar Chart -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="myBarChart"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -590,65 +604,126 @@
                     <!-- Content Row -->
                     <div class="row">
 
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
+<!--                        &lt;!&ndash; Content Column &ndash;&gt;-->
+<!--                        <div class="col-lg-6 mb-4">-->
 
-                            <!-- Project Card Example -->
+<!--                            &lt;!&ndash; Project Card Example &ndash;&gt;-->
+<!--                            <div class="card shadow mb-4">-->
+<!--                                <div class="card-header py-3">-->
+<!--                                    <h6 class="m-0 font-weight-bold text-primary">Top 5 Recommendations</h6>-->
+<!--                                </div>-->
+<!--                                <div class="card-body">-->
+<!--                                    <h4 class="small font-weight-bold">Computer Science <span-->
+<!--                                            class="float-right">60%</span></h4>-->
+<!--                                    <div class="progress mb-4">-->
+<!--                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"-->
+<!--                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                    </div>-->
+<!--                                    <h4 class="small font-weight-bold">Medicine <span-->
+<!--                                            class="float-right">20%</span></h4>-->
+<!--                                    <div class="progress mb-4">-->
+<!--                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"-->
+<!--                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                    </div>-->
+<!--                                    <h4 class="small font-weight-bold">Chemistry <span-->
+<!--                                            class="float-right">10%</span></h4>-->
+<!--                                    <div class="progress mb-4">-->
+<!--                                        <div class="progress-bar" role="progressbar" style="width: 10%"-->
+<!--                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                    </div>-->
+<!--                                    <h4 class="small font-weight-bold">Biology <span-->
+<!--                                            class="float-right">8%</span></h4>-->
+<!--                                    <div class="progress mb-4">-->
+<!--                                        <div class="progress-bar bg-info" role="progressbar" style="width: 8%"-->
+<!--                                            aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                    </div>-->
+<!--                                    <h4 class="small font-weight-bold">Materials Science <span-->
+<!--                                            class="float-right">2%</span></h4>-->
+<!--                                    <div class="progress">-->
+<!--                                        <div class="progress-bar bg-success" role="progressbar" style="width: 2%"-->
+<!--                                            aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <!-- Citations -->
+                        <div class="col-xl-4 col-lg-7">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Top 5 Recommendations</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Citations</h6>
                                 </div>
-                                <div class="card-body">
-                                    <h4 class="small font-weight-bold">Computer Science <span
-                                            class="float-right">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Medicine <span
-                                            class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Chemistry <span
-                                            class="float-right">10%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 10%"
-                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Biology <span
-                                            class="float-right">8%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 8%"
-                                            aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Materials Science <span
-                                            class="float-right">2%</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 2%"
-                                            aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                <div class="card-body text-xs">
+                                    <h10 class="m-0 font-weight-bold text-primary">A Descriptive Study of High-Frequency Trade and Quote Option Data</h10>
+                                    <hr class="hr" />
+                                    <b>Abstract:</b> This paper provides a guide to high frequency option trade and quote data disseminated by the Options Price
+                                    Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details
+                                    on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing
+                                    literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and
+                                    present a thorough empirical description of the observed option trades and quotes for a selected sample of
+                                    underlying assets that contains more than 25 billion records. We outline several types of irregular observations
+                                    and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
+                                    frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
+                                    estimation. Both applications highlight the rich information content of the high frequency OPRA data.
+                                    <p align="right">
+                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
+                                            <i class="fas fa-chart-pie"></i>
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="col-lg-6 mb-4">
-
-
-                            <!-- Bar Chart -->
+                        <!-- References -->
+                        <div class="col-xl-4 col-lg-7">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">References</h6>
                                 </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas id="myBarChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    Styling for the bar chart can be found in the
-                                    <code>/js/demo/chart-bar-demo.js</code> file.
+                                <div class="card-body text-xs">
+                                    <h10 class="m-0 font-weight-bold text-primary">A Descriptive Study of High-Frequency Trade and Quote Option Data</h10>
+                                    <hr class="hr" />
+                                    <b>Abstract:</b> This paper provides a guide to high frequency option trade and quote data disseminated by the Options Price
+                                    Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details
+                                    on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing
+                                    literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and
+                                    present a thorough empirical description of the observed option trades and quotes for a selected sample of
+                                    underlying assets that contains more than 25 billion records. We outline several types of irregular observations
+                                    and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
+                                    frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
+                                    estimation. Both applications highlight the rich information content of the high frequency OPRA data.
+                                    <p align="right">
+                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
+                                            <i class="fas fa-chart-pie"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recommendations -->
+                        <div class="col-xl-4 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Recommendations</h6>
+                                </div>
+                                <div class="card-body text-xs">
+                                    <h10 class="m-0 font-weight-bold text-primary">A Descriptive Study of High-Frequency Trade and Quote Option Data</h10>
+                                    <hr class="hr" />
+                                    <b>Abstract:</b> This paper provides a guide to high frequency option trade and quote data disseminated by the Options Price
+                                    Reporting Authority (OPRA). We present a comprehensive overview of the U.S. option market, including details
+                                    on market regulation and the trading processes for all 16 constituent option exchanges. We review the existing
+                                    literature that utilizes high-frequency options data, summarize the general structure of the OPRA dataset and
+                                    present a thorough empirical description of the observed option trades and quotes for a selected sample of
+                                    underlying assets that contains more than 25 billion records. We outline several types of irregular observations
+                                    and provide recommendations for data filtering and cleaning. Finally, we illustrate the usefulness of the high
+                                    frequency option data with two empirical applications: option-implied variance estimation and risk-neutral density
+                                    estimation. Both applications highlight the rich information content of the high frequency OPRA data.
+                                    <p align="right">
+                                        <a href="dash.html" class="btn btn-primary btn-circle btn-sm" title="Generate charts for this paper.">
+                                            <i class="fas fa-chart-pie"></i>
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
