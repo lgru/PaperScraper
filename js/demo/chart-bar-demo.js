@@ -32,14 +32,35 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ['Business', 'Computer Science', 'Economics', 'Mathematics', 'Physics'],
     datasets: [{
-      label: "Revenue",
-      backgroundColor: "#4e73df",
+      label: "This Paper",
+      backgroundColor: 'rgb(255, 99, 132)',
+      hoverBackgroundColor: "rgb(227, 82, 112)",
+      borderColor: "#4e73df",
+      maxBarThickness: 25,
+      data: [0, 1, 0, 0, 0],
+    }, {
+      label: "Citations",
+      backgroundColor: '#4e73df',
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
       maxBarThickness: 25,
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [1, 0, 0, 0, 0],
+    }, {
+      label: "References",
+      backgroundColor: '#1cc88a',
+      hoverBackgroundColor: "#17a673",
+      borderColor: "#4e73df",
+      maxBarThickness: 25,
+      data: [11, 4, 55, 12, 0],
+    }, {
+      label: "Recommendations",
+      backgroundColor: '#f6c23e',
+      hoverBackgroundColor: "#e0b138",
+      borderColor: "#4e73df",
+      maxBarThickness: 25,
+      data: [0, 0, 2, 0, 1],
     }],
   },
   options: {
@@ -52,38 +73,14 @@ var myBarChart = new Chart(ctx, {
         bottom: 0
       }
     },
+    responsive: true,
     scales: {
-      xAxes: [{
-        time: {
-          unit: 'month'
-        },
-        gridLines: {
-          display: false,
-          drawBorder: false
-        },
-        ticks: {
-          maxTicksLimit: 6
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          min: 0,
-          max: 15000,
-          maxTicksLimit: 5,
-          padding: 10,
-          // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return '$' + number_format(value);
-          }
-        },
-        gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
-          drawBorder: false,
-          borderDash: [2],
-          zeroLineBorderDash: [2]
-        }
-      }],
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true
+      }
     },
     legend: {
       display: true
@@ -103,7 +100,7 @@ var myBarChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel);
         }
       }
     },

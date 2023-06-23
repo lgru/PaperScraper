@@ -7,11 +7,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Computer Science", "Mathematics", "Medicine"],
+    labels: ['T. Andersen', 'Ilya Archakov', 'Leon Eric Grund', 'N. Hautsch', 'Yifan Li', 'S. Nasekin', 'Ingmar Nolte', 'Manh Cuong Pham', 'Stephen J. Taylor', 'Viktor Todorov'],
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#7d868c'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#6c757d'],
+      data: [129, 10, 2, 121, 39, 16, 60, 8, 26, 106],
+      backgroundColor: ['rgb(255,99,71)', 'rgb(218,165,32)','rgb(34,139,34)','rgb(32,178,170)','rgb(127,255,212)','rgb(30,144,255)','rgb(106,90,205)', 'rgb(238,130,238)', 'rgb(210,180,140)', 'rgb(176,196,222)'],
+//      hoverBackgroundColor: ['#2e59d9', '#17a673', '#6c757d'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },

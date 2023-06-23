@@ -38,10 +38,10 @@ var myLineChart = new Chart(ctx, {
       lineTension: 0.3,
       backgroundColor: "rgb(255, 99, 132, 0.05)",
       borderColor: "rgba(255, 99, 132, 1)",
-      pointRadius: 3,
+      pointRadius: 5,
       pointBackgroundColor: "rgba(255, 99, 132, 1)",
       pointBorderColor: "rgba(255, 99, 132, 1)",
-      pointHoverRadius: 3,
+      pointHoverRadius: 5,
       pointHoverBackgroundColor: "rgba(255, 99, 132, 1)",
       pointHoverBorderColor: "rgba(255, 99, 132, 1)",
       pointHitRadius: 10,
@@ -61,7 +61,8 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2],
+      data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1, 1, 1, 1, 1, 2, 2],
+      // data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2],
     },
     {
       label: "References",
@@ -91,7 +92,8 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(246, 194, 62, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
+      data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 10],
+      // data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
     }],
   },
   options: {
@@ -136,7 +138,7 @@ var myLineChart = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true
     },
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
